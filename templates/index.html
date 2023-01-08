@@ -17,15 +17,22 @@
   <a class="navbar-brand" href="#">FACE RECOGNITION + ATTENDANCE PROJECT by glennin</a>
 </nav>
 <br>
- <div class="mx-auto" style="width: 700px;">
-  <img src="{{ url_for('video_feed') }}">
+ <div class="mx-auto" style="width: 700px ;border-radius: 5px;">
+  <img src="{{ url_for('video_feed') }}" style="border-radius: 5px;">
 </div>
 
-<br><br>
-<div class="mx-auto" style="width: 150px;">
-  <a href="http://127.0.0.1:5000/">
-   <button type="button" class="btn btn-success">Upload New image</button>
-</a>
+<br>
+<div style="display: flex;flex-direction: row;margin: auto;">
+  <div class="mx-auto" >
+    <a href="http://127.0.0.1:5000/">
+     <button type="button" class="btn btn-success"style="width: 150px; height:60px; text-align: center;height: auto; border-radius: 8px;outline: none; cursor: pointer;">Upload New image</button>
+  </a>
+  </div>
+  <div  class="mx-auto" >
+      <a href="/README.md" download >
+     <button type="button" class="btn btn-primary" style="width: 150px;height: 60px;text-align: center;border-radius: 8px;cursor:pointer;outline: none;">download Attendance stylesheet</button>
+  </a>
+  </div>
 </div>
 <p class="mt-5 mb-3 text-muted text-center">&copy; 2023 by glen</p>
 </body>
